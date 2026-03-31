@@ -1,0 +1,5 @@
+--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1 +1,5 @@-printf("dsfghjsd"+2);+"""
++Module docstring
++"""
++
++print("dsfghjsd" + "2")

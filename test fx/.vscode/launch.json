@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "TicTacToeApp",
+      "request": "launch",
+      "mainClass": "TicTacToeApp",
+      "projectName": "test fx_d8a8f2b4"
+    },
+    {
+      "type": "java",
+      "name": "Launch JavaFX",
+      "request": "launch",
+      "mainClass": "Main",
+      "vmArgs": "--module-path /Users/sakib/Downloads/javafx-sdk-25.0.2/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Play Tic-Tac-Toe",
+      "request": "launch",
+      "mainClass": "TicTacToeApp",
+      "vmArgs": "--module-path /Users/sakib/Downloads/javafx-sdk-25.0.2/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/sakib/Downloads/javafx-sdk-25.0.2/lib/**/*.jar"
+    ],
+    "launch": {
+        
+        "configurations": [],
+        "compounds": []
+    }
+}

@@ -1,0 +1,8 @@
+--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -2,6 +2,6 @@ Module docstring
+ """
+ 
+-import xxxxxxx
++import sys
+ 
+-printf("syfgyewgyugewfg"+1);
++print("syfgyewgyugewfg" + "1")

@@ -1,0 +1,7 @@
+--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1,2 +1,6 @@-a = 2
+-print(ab+'2')+"""
++This module contains test code for bad code verification.
++"""
++A = 2
++print(str(A)+'2')
++print()

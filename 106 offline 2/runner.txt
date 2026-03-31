@@ -1,0 +1,3 @@
+g++ -std=c++11 arrayqueue_tester.cpp arrayqueue.cpp -o main
+g++ -std=c++11 syntax_checker_tester.cpp syntax_checker.cpp -o main
+g++ -std=c++11 listqueue_tester.cpp listqueue.cpp -o main

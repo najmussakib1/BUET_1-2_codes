@@ -1,0 +1,72 @@
+[
+    {
+        "timestamp": "2025-12-11T15:25:45.922412",
+        "filepath": "repo_to_watch/test_bad_code.py",
+        "errors": "STDOUT:\n************* Module test_bad_code\nrepo_to_watch/test_bad_code.py:1:14: E0001: Parsing failed: 'expected ':' (test_bad_code, line 1)' (syntax-error)\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -1,4 +1,4 @@-def add(a, b)\n+def add(a, b):\n     return a + b\n \n-print(add(1, 2))\n+print(add(1, 2))",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T15:26:38.429496",
+        "filepath": "repo_to_watch/test_bad_code.py",
+        "errors": "STDOUT:\n************* Module test_bad_code\nrepo_to_watch/test_bad_code.py:4:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)\nrepo_to_watch/test_bad_code.py:4:6: E1120: No value for argument 'b' in function call (no-value-for-parameter)\n\n-----------------------------------\nYour code has been rated at 0.00/10\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -1,4 +1,19 @@+\"\"\"\n+Module docstring.\n+This module contains a function to add two numbers.\n+\"\"\"\n+\n def add(a, b):\n+    \"\"\"\n+    Function to add two numbers.\n+\n+    Args:\n+        a (int): The first number.\n+        b (int): The second number.\n+\n+    Returns:\n+        int: The sum of a and b.\n+    \"\"\"\n     return a + b\n \n-print(add(1))+print(add(1, 1))",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T15:49:49.898595",
+        "filepath": "repo_to_watch/test_bad_code.py",
+        "errors": "STDOUT:\n************* Module test_bad_code\nrepo_to_watch/test_bad_code.py:1:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code.py:1:0: W0301: Unnecessary semicolon (unnecessary-semicolon)\nrepo_to_watch/test_bad_code.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code.py:1:0: E0602: Undefined variable 'printf' (undefined-variable)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -1 +1,5 @@-printf(\"heelo world\");+\"\"\"\n+Module docstring\n+\"\"\"\n+\n+print(\"hello world\")",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T19:10:34.076293",
+        "filepath": "repo_to_watch/test_bad_code.py",
+        "errors": "STDOUT:\n************* Module test_bad_code\nrepo_to_watch/test_bad_code.py:7:0: W0301: Unnecessary semicolon (unnecessary-semicolon)\nrepo_to_watch/test_bad_code.py:5:0: E0401: Unable to import 'xxxxxxx' (import-error)\nrepo_to_watch/test_bad_code.py:7:0: E0602: Undefined variable 'printf' (undefined-variable)\nrepo_to_watch/test_bad_code.py:5:0: W0611: Unused import xxxxxxx (unused-import)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -2,6 +2,6 @@ Module docstring\n \"\"\"\n \n-import xxxxxxx\n+import sys\n \n-printf(\"syfgyewgyugewfg\"+1);\n+print(\"syfgyewgyugewfg\" + \"1\")",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T19:12:26.203670",
+        "filepath": "repo_to_watch/test_bad_code_verify.py",
+        "errors": "STDOUT:\n************* Module test_bad_code_verify\nrepo_to_watch/test_bad_code_verify.py:2:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code_verify.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code_verify.py:1:0: C0103: Constant name \"a\" doesn't conform to UPPER_CASE naming style (invalid-name)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 5.00/10, -5.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1,2 +1,6 @@-a = 2\n-print(a+'2')+\"\"\"\n+This module contains a simple test for variable and print functionality.\n+\"\"\"\n+A = 2\n+print(str(A) + '2')\n+print()",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T19:12:29.944226",
+        "filepath": "repo_to_watch/test_bad_code.py",
+        "errors": "STDOUT:\n************* Module test_bad_code\nrepo_to_watch/test_bad_code.py:1:5: E0001: Parsing failed: 'invalid syntax (test_bad_code, line 1)' (syntax-error)\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -1,2 +1,2 @@-int a =2\n-print(ab+2)+a = 2\n+print(a + 2)",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T19:30:27.652989",
+        "filepath": "repo_to_watch/test_bad_code_verify.py",
+        "errors": "STDOUT:\n************* Module test_bad_code_verify\nrepo_to_watch/test_bad_code_verify.py:2:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code_verify.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code_verify.py:1:0: C0103: Constant name \"a\" doesn't conform to UPPER_CASE naming style (invalid-name)\nrepo_to_watch/test_bad_code_verify.py:2:6: E0602: Undefined variable 'ab' (undefined-variable)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1,2 +1,6 @@-a = 2\n-print(ab+'2')+\"\"\"\n+This module contains test code for bad code verification.\n+\"\"\"\n+A = 2\n+print(str(A)+'2')\n+print()",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T19:30:30.617398",
+        "filepath": "repo_to_watch/test_bad_code.py",
+        "errors": "STDOUT:\n************* Module test_bad_code\nrepo_to_watch/test_bad_code.py:2:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code.py:1:0: C0103: Constant name \"a\" doesn't conform to UPPER_CASE naming style (invalid-name)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code.py+++ b/repo_to_watch/test_bad_code.py@@ -1,2 +1,6 @@-a = 2\n-print(a + 2)+\"\"\"\n+This module contains a simple arithmetic operation.\n+\"\"\"\n+\n+A = 2\n+print(A + 2)",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-11T19:35:15.794884",
+        "filepath": "repo_to_watch/test_bad_code_verify.py",
+        "errors": "STDOUT:\n************* Module test_bad_code_verify\nrepo_to_watch/test_bad_code_verify.py:2:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code_verify.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code_verify.py:2:6: E0602: Undefined variable 'AB' (undefined-variable)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1,2 +1,8 @@-A= 2\n+\"\"\"\n+This module contains a simple print statement.\n+\"\"\"\n+\n+A = 2\n+B = 3\n+AB = A * B\n print(AB)",
+        "status": "fixed"
+    },
+    {
+        "timestamp": "2025-12-12T21:04:48.868950",
+        "filepath": "repo_to_watch/test_bad_code_verify.py",
+        "errors": "STDOUT:\n************* Module test_bad_code_verify\nrepo_to_watch/test_bad_code_verify.py:1:0: C0304: Final newline missing (missing-final-newline)\nrepo_to_watch/test_bad_code_verify.py:1:0: W0301: Unnecessary semicolon (unnecessary-semicolon)\nrepo_to_watch/test_bad_code_verify.py:1:0: C0114: Missing module docstring (missing-module-docstring)\nrepo_to_watch/test_bad_code_verify.py:1:0: E0602: Undefined variable 'printf' (undefined-variable)\n\n------------------------------------------------------------------\nYour code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)\n\n\nSTDERR:\n",
+        "patch": "--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1 +1,5 @@-printf(\"dsfghjsd\"+2);+\"\"\"\n+Module docstring\n+\"\"\"\n+\n+print(\"dsfghjsd\" + \"2\")",
+        "status": "fixed"
+    }
+]

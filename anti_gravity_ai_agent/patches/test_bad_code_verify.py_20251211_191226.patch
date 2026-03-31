@@ -1,0 +1,7 @@
+--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1,2 +1,6 @@-a = 2
+-print(a+'2')+"""
++This module contains a simple test for variable and print functionality.
++"""
++A = 2
++print(str(A) + '2')
++print()

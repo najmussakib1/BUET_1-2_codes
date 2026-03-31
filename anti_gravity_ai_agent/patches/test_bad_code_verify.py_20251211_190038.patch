@@ -1,0 +1,13 @@
+--- a/repo_to_watch/test_bad_code_verify.py+++ b/repo_to_watch/test_bad_code_verify.py@@ -1,4 +1,11 @@+"""
++Module docstring.
++"""
+ 
+ def hello():
+-  print("Hello") # Indentation error likely if I mix tabs/spaces or just bad style, but let's make a clear syntax error or missing import
+-  import non_existent_module
++    """
++    Function docstring.
++    """
++    print("Hello")
++
++# Removed import statement for non_existent_module as it was causing errors

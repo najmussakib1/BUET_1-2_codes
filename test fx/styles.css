@@ -1,0 +1,65 @@
+/* Main background with a modern gradient */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #1a1a2e, #16213e, #0f3460);
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Container for the profile card */
+.profile-card {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+    -fx-padding: 40;
+    -fx-alignment: center;
+    -fx-spacing: 15;
+    -fx-max-width: 500;
+}
+
+/* Name label styling */
+.name-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e94560;
+    -fx-effect: dropshadow(gaussian, rgba(233, 69, 96, 0.4), 10, 0.5, 0, 0);
+}
+
+/* Title label styling */
+.title-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* Detail text styling */
+.detail-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #b0b0b0;
+}
+
+/* Highlighted skill text */
+.skill-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #4ecca3;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 0 0;
+}
+
+/* interactive button */
+.action-button {
+    -fx-background-color: #e94560;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-padding: 10 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(233, 69, 96, 0.4), 5, 0, 0, 2);
+}
+
+.action-button:hover {
+    -fx-background-color: #ff6b81;
+}
+
+.action-button:pressed {
+    -fx-background-color: #c0394d;
+}

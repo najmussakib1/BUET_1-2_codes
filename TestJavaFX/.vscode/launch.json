@@ -1,0 +1,103 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FrameRate",
+            "request": "launch",
+            "mainClass": "animation.FrameRate",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "JFXEventTransform",
+            "request": "launch",
+            "mainClass": "animation.JFXEventTransform",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "JFXHelloWorld",
+            "request": "launch",
+            "mainClass": "animation.JFXHelloWorld",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "JFXKeyEvent",
+            "request": "launch",
+            "mainClass": "animation.JFXKeyEvent",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "JFXSquare",
+            "request": "launch",
+            "mainClass": "animation.JFXSquare",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "JFXTransform",
+            "request": "launch",
+            "mainClass": "animation.JFXTransform",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "login.Server",
+            "projectName": "TestJavaFX_7a889e85"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "controls.Main",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "login.Main",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "multiplescene.Main",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "singlescene.Main",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "BallSim",
+            "request": "launch",
+            "mainClass": "animation.BallSim",
+            "projectName": "TestJavaFX_7a889e85",
+            "vmArgs": " --module-path D:\\Projects\\javafx-sdk-21.0.5\\lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        }
+    ]
+}

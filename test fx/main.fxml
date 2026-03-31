@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<HBox spacing="40"
+      alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MainController"
+      style="-fx-background-color: #f0f2f5;">
+
+    <!-- LEFT SIDE (Facebook intro) -->
+    <VBox spacing="15" alignment="CENTER_LEFT">
+        <Label text="facebook"
+               style="-fx-text-fill: #1877f2;">
+            <font>
+                <Font size="48"/>
+            </font>
+        </Label>
+
+        <Label text="Facebook helps you connect and share with the people in your life."
+               wrapText="true"
+               style="-fx-font-size: 20px; -fx-text-fill: #1c1e21;"/>
+    </VBox>
+
+    <!-- RIGHT SIDE (Login box) -->
+    <VBox spacing="12"
+          alignment="CENTER"
+          style="-fx-background-color: white;
+                 -fx-background-radius: 8;
+                 -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 4);">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <TextField promptText="Email address or phone number"
+                   prefWidth="260"/>
+
+        <PasswordField promptText="Password"
+                       prefWidth="260"/>
+
+        <Button text="Log In"
+                prefWidth="260"
+                style="-fx-background-color: #1877f2;
+                       -fx-text-fill: white;
+                       -fx-font-size: 16px;
+                       -fx-font-weight: bold;"
+                onAction="#handleLogin"/>
+
+        <Hyperlink text="Forgotten password?"
+                   style="-fx-text-fill: #1877f2;"/>
+
+        <Separator/>
+
+        <Button text="Create New Account"
+                style="-fx-background-color: #42b72a;
+                       -fx-text-fill: white;
+                       -fx-font-size: 14px;
+                       -fx-font-weight: bold;"
+                onAction="#handleSignup"/>
+    </VBox>
+
+</HBox>
