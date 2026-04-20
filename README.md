@@ -1,5 +1,6 @@
 # 🎓 Level-1 Term-2 | Computer Science & Engineering 🚀
 
+#MD. NAJMUS SAKIB
 Welcome to my academic repository! This space serves as a digital archive for my journey through the second term of my freshman year. It contains all the implementations, lab tasks, and projects from core engineering courses.
 
 ---
